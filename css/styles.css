@@ -1,0 +1,15 @@
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+}
+
+nav > a {
+    padding-inline: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+}
