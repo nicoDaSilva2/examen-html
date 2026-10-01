@@ -9,7 +9,18 @@ nav > a {
     padding-inline: 15px;
 }
 
-footer {
+#footer-container {
     position: fixed;
     bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 20px 20px;
 }
