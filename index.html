@@ -6,47 +6,70 @@
         <meta name="robots" content="index, follow">
         <title>Mi web</title>
         <meta name="author" content="Nicolás Da Silva">
-        <meta name="description" content="Descripción de mi web">
-        <meta name="keywords" content="web, mia, yo">
+        <meta name="description" content="Página principal de una web para un restaurante.">
+        <meta name="keywords" content="restaurante, comida, cena">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="icon" type="image/png" href="favicon.ico">
     </head>
     <body>
-        <header>
-            <div id="header-container">
-                <h1>Mi web!</h1>
-                <nav>
-                    <a href="#">Inicio</a>
-                    <a href="views/galeria.html">Galería</a>
-                    <a href="views/presupuesto.html">Presupuesto</a>
-                    <a href="views/contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section>
-                <h2>Restaurante de mierda, ¿qué desea?</h2>
-            </section>
-            <section>
-                <img src="assets/img/interior.jpg" alt="Interior del restaurante" width="800px">
-            </section>
-            <section>En nuestro restaurante podrá encontrar los mejores platos de diversas gastronomías.</section>
-        </main>
-        <footer>
-            <div id="footer-container">
-                <nav>
-                    <a href="https://www.instagram.com/">
-                        <img src="assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!" width="24px">
-                    </a>
-                    <a href="https://www.x.com/">
-                        <img src="assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!" width="24px">
-                    </a>                
-                    <a href="https://www.facebook.com/">
-                        <img src="assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!" width="24px">
-                    </a>
-                </nav>
-                <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    </body>
+        <div id="body-container">
+            <header>
+                <div id="header-container">
+                    <h1>Mi web!</h1>
+                    <nav>
+                        <a class="selected" href="#">Inicio</a>
+                        <a href="views/galeria.html">Galería</a>
+                        <a href="views/presupuesto.html">Presupuesto</a>
+                        <a href="views/contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section id="intro">
+                    <h2>Restaurante, <span>¿qué va a comer hoy?</span></h2>
+                    <img id="indoors-img" src="assets/img/interior.jpg" alt="Interior del restaurante">
+                    <p id="restaurant-description">
+                        Descubre una selección de platos de diferentes gastronomías, preparados para ofrecerte una experiencia única.
+                    </p>
+                </section>
+                <section id="horario">
+                    <h2>Nuestros horarios</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Lunes a viernes</th>
+                                <th>Sábado</th>
+                                <th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7:30 - 23:00</td>
+                                <td>8:00 - 23:00</td>
+                                <td>9:00 - 21:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>                
+            </main>
+            <footer>
+                <div id="footer-container-1">
+                    <div id="footer-container-2">
+                        <nav>
+                            <a href="https://www.instagram.com/">
+                                <img src="assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!" width="24px">
+                            </a>
+                            <a href="https://www.x.com/">
+                                <img src="assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!" width="24px">
+                            </a>                
+                            <a href="https://www.facebook.com/">
+                                <img src="assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!" width="24px">
+                            </a>
+                        </nav>
+                        <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </div>
 </html>

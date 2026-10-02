@@ -1,26 +1,165 @@
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #17212b;
+}
+
+#body-container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1e3a5f;
+}
+
 #header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 50px;
+    border-radius: 8px;
 }
 
 nav > a {
     padding-inline: 15px;
+    padding-bottom: 6px;
+    color: white;
+    text-decoration: none;
 }
 
-#footer-container {
-    position: fixed;
-    bottom: 0px;
+nav > a:hover {
+    color: #2cb1a6;
+}
+
+.selected {
+    color: 2cb1a6;
+    border-bottom: 3px solid #2cb1a6;
+}
+
+main {
+    background-color: #3b82b6;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    border-radius: 8px;
+}
+
+/* Sección de introducción*/
+
+#intro {
+    margin-bottom: 100px;
+}
+
+#intro > h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1e3a5f;
+    margin: 35px 0px 25px;
+}
+
+#intro > h2 > span {
+    color: #2cb1a6;
+    font-style: italic;
+}
+
+#intro > h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin: 12px auto 0;
+    background-color: #2cb1a6;
+    border-radius: 10px;
+}
+
+#indoors-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+#restaurant-description {
+    max-width: 750px;
+    margin: 25px auto 50px;
+    padding: 0 20px;
+    text-align: center;
+    color: #17212b;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+p {
+    color: #17212B;
+}
+
+/* Tabla de horairos*/
+
+#horario {
+    width: 90%;
+    margin: 30px 30px;
+    padding-left: 30px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+#horario thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+#horario th {
+    padding: 15px 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#horario td {
+    padding: 13px 12px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#footer-container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#footer-container-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0px;
+    background-color: #1e3a5f;
+    border-radius: 8px;
+    padding: 10px 25px 0px 25px;
 }
+
+footer p {
+    color: #3B82B6;
+}
+
+/* Galería */
 
 #gallery-container {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 200px 200px 200px 200px;
     gap: 20px 20px;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
 }
