@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <title>Mi web</title>
+        <title>Restaurante</title>
         <meta name="author" content="Nicolás Da Silva">
         <meta name="description" content="Página principal de una web para un restaurante.">
         <meta name="keywords" content="restaurante, comida, cena">
@@ -15,23 +15,37 @@
         <div id="body-container">
             <header>
                 <div id="header-container">
-                    <h1>Mi web!</h1>
+                    <h1>Restaurante</h1>
                     <nav>
+                        <!-- La clase "selected" se usa para resaltar la sección actual -->
                         <a class="selected" href="#">Inicio</a>
                         <a href="views/galeria.html">Galería</a>
                         <a href="views/presupuesto.html">Presupuesto</a>
                         <a href="views/contacto.html">Contacto</a>
                     </nav>
                 </div>
+                <hr>
             </header>
             <main>
+                <!-- Sección de presentación del negocio -->
                 <section id="intro">
-                    <h2>Restaurante, <span>¿qué va a comer hoy?</span></h2>
-                    <img id="indoors-img" src="assets/img/interior.jpg" alt="Interior del restaurante">
-                    <p id="restaurant-description">
-                        Descubre una selección de platos de diferentes gastronomías, preparados para ofrecerte una experiencia única.
-                    </p>
+                    <div id="intro-flexbox"> <!-- Permitirá que <aside> ocupe el lado derecho -->
+                        <div>
+                            <h2>Restaurante, <span>viaje por el mundo desde nuestro local</span></h2>
+                            <img id="indoors-img" src="assets/img/interior.jpg" alt="Interior del restaurante">
+                            <p id="restaurant-description">
+                                Descubre una selección de platos de diferentes gastronomías, preparados para ofrecerte una experiencia única.
+                            </p>
+                        </div>
+                        <div id="bio">
+                            <aside>
+                                <h3>Nuestra historia</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti illum, esse eaque nam atque amet. Itaque odio beatae esse vitae? Ducimus ad id non iusto harum nisi, optio eos ratione.</p>
+                            </aside>
+                        </div>
+                    </div>
                 </section>
+                <!-- Tabla con los horarios -->
                 <section id="horario">
                     <h2>Nuestros horarios</h2>
                     <table>
@@ -57,16 +71,16 @@
                     <div id="footer-container-2">
                         <nav>
                             <a href="https://www.instagram.com/">
-                                <img src="assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!" width="24px">
+                                <img src="assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!">
                             </a>
                             <a href="https://www.x.com/">
-                                <img src="assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!" width="24px">
+                                <img src="assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!">
                             </a>                
                             <a href="https://www.facebook.com/">
-                                <img src="assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!" width="24px">
+                                <img src="assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!">
                             </a>
                         </nav>
-                        <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
+                        <p>&copy; 2026 Restaurante. Todos los derechos reservados.</p>
                     </div>
                 </div>
             </footer>

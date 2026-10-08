@@ -12,40 +12,61 @@
         <link rel="icon" type="image/png" href="../favicon.ico">
     </head>
     <body>
-        <header>
-            <div id="header-container">
-                <h1>Mi web!</h1>
-                <nav>
-                    <a href="../index.html">Inicio</a>
-                    <a href="galeria.html">Galería</a>
-                    <a class="selected" href="#">Presupuesto</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section>
-                <h2>Restaurante, <span>¿qué va a comer hoy?</span></h2>
-            </section>
-            <section>En nuestro restaurante podrá encontrar los mejores platos de diversas gastronomías.</section>
-        </main>
-        <footer>
-            <div id="footer-container-1">
-                <div id="footer-container-2">
+        <div id="body-container">
+            <header>
+                <div id="header-container">
+                    <h1>Restaurante</h1>
                     <nav>
-                        <a href="https://www.instagram.com/">
-                            <img src="../assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!" width="24px">
-                        </a>
-                        <a href="https://www.x.com/">
-                            <img src="../assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!" width="24px">
-                        </a>                
-                        <a href="https://www.facebook.com/">
-                            <img src="../assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!" width="24px">
-                        </a>
+                        <!-- La clase "selected" se usa para resaltar la sección actual -->
+                        <a href="../index.html">Inicio</a>
+                        <a href="galeria.html">Galería</a>
+                        <a class="selected" href="#">Presupuesto</a>
+                        <a href="contacto.html">Contacto</a>
                     </nav>
-                    <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
                 </div>
-            </div>
-        </footer>
+                <hr>
+            </header>
+            <main>
+                <form method="post">
+                    <p>
+                        <label>Nombre: <input type="text" name="nombre" required></label>
+                    </p>
+                    <p>
+                        <label>Teléfono: <input type="tel" name="teléfono" required></label>
+                    </p>
+                    <p>
+                        <label>E-mail: <input type="emial" name="e-mail" required></label>
+                    </p>
+                    <p>
+                        <label>Más información<textarea rows="4" cols="40"></textarea></label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="términos-y-condiciones" required>Acepto los términos y condiciones</label>
+                    </p>
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpiar</button>
+                    </p>                
+                </form>
+            </main>
+            <footer>
+                <div id="footer-container-1">
+                    <div id="footer-container-2">
+                        <nav>
+                            <a href="https://www.instagram.com/">
+                                <img src="../assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!">
+                            </a>
+                            <a href="https://www.x.com/">
+                                <img src="../assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!">
+                            </a>                
+                            <a href="https://www.facebook.com/">
+                                <img src="../assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!">
+                            </a>
+                        </nav>
+                        <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
