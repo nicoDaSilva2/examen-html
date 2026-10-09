@@ -89,7 +89,7 @@ main {
     margin: 25px auto 50px;
     padding: 0 20px;
     text-align: center;
-    color: #17212b;
+    color: #1e3a5f;
     font-size: 1.05rem;
     line-height: 1.7;
 }
@@ -100,8 +100,8 @@ main {
     margin-bottom: 150px;
     padding: 25px;
     border-radius: 8px;
-    background-color: #f2edebaf;
-    color: #17212b;
+    background-color: white;
+    color: 1e3a5f;
     text-align: justify;
 }
 
@@ -113,10 +113,14 @@ main {
     padding-inline: 30px;
     border-collapse: separate;
     border-spacing: 0;
-    background-color: #f2edeb;
+    background-color: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+#horario h2 {
+    color: black;
 }
 
 #horario thead {
