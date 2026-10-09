@@ -140,14 +140,14 @@ main {
     border-bottom: 1px solid #e5e5e5;
 }
 
-#footer-container-1 {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-#footer-container-2 {
+#footer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
