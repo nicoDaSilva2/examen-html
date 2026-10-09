@@ -1,6 +1,8 @@
 /* Mismo fondo para todas las páginas de la web */
 body {
-    background-image: linear-gradient(to bottom, black, #1e3a5f 7%, #3b98ce);
+    margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, black, #1e3a5f 7%, #3b98ce, white 95%);
 }
 
 #body-container {
@@ -8,12 +10,16 @@ body {
     flex-direction: column;
 }
 
+/* Barra superior */
+
 #header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 50px;
     border-radius: 8px;
+    color: white;
+    border-bottom: 1px solid #D183C9
 }
 
 nav > a {
@@ -28,7 +34,7 @@ nav > a:hover {
 }
 
 .selected {
-    color: 2cb1a6;
+    color: #D183C9;
     border-bottom: 3px solid #D183C9;
 }
 
@@ -150,7 +156,7 @@ main {
 }
 
 footer p {
-    color: #3B82B6;
+    color: white;
 }
 
 footer img {
@@ -172,8 +178,92 @@ footer img {
     height: 200px;
 }
 
-/* Formulario de presupuesto */
+/* Página de presupuesto */
 
-form {
-    height: 100vh;
+#budget {
+    max-width: 600px;
+    margin-inline: auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+#budget p {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+#budget label {
+    font-weight: bold;
+}
+
+#budget textarea {
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    padding: 10px 28px;
+    border: 2px solid #1e3a5f;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button[type="submit"] {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.buttons button[type="reset"] {
+    background-color: white;
+    color: #1e3a5f;
+}
+
+.buttons button:hover {
+    border-color: #D183C9;
+    background-color: #D183C9;
+    color: black;
+}
+
+/* Página de contacto */
+
+main h2 {
+    color: white;
+}
+
+#ubication-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#contact-card {
+    flex: 1;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-style: normal; /* <address> es cursiva por defecto */
+    line-height: 1.6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+#map-img {
+    width: 40%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }

@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <title>Mi web</title>
+        <title>Presupuesto | Restaurante</title>
         <meta name="author" content="Nicolás Da Silva">
-        <meta name="description" content="Precios de los diferentes menús.">
+        <meta name="description" content="Solicite un presupuesto para su evento o reserva.">
         <meta name="keywords" content="presupuesto, precio">
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="icon" type="image/png" href="../favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
     </head>
     <body>
         <div id="body-container">
@@ -24,26 +24,30 @@
                         <a href="contacto.html">Contacto</a>
                     </nav>
                 </div>
-                <hr>
             </header>
             <main>
-                <form method="post">
+                <h2>Solicite un presupuesto para su evento o reserva.</h2>
+                <form id="budget" method="get"> <!-- "post" puede dar problemas en GitHub Pages -->
                     <p>
-                        <label>Nombre: <input type="text" name="nombre" required></label>
+                        <label>Nombre: <input type="text" name="nombre" placeholder="Pedro" title="Entre 3 y 20 letras, sin números ni símbolos."
+                            pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{3,20}" maxlength="20" required></label>
                     </p>
                     <p>
-                        <label>Teléfono: <input type="tel" name="teléfono" required></label>
+                        <label>Teléfono: <input type="tel" name="telefono" placeholder="605605605" title="9 dígitos, sin espacios ni prefijo"
+                            pattern="[0-9]{9}" required></label>
                     </p>
                     <p>
-                        <label>E-mail: <input type="email" name="e-mail" required></label>
+                        <label>E-mail: <input type="email" name="email" placeholder="correo@ejemplo.es" title="Un correo válido"
+                            pattern="[^@]+@[^@]+\.[^@]+" required></label>
                     </p>
                     <p>
-                        <label>Más información<textarea rows="4" cols="40"></textarea></label>
+                        <label>Más información<textarea name="info" rows="4"
+                            title="Cuéntenos cualquier detalle que nos ayude a preparar su presupuesto"></textarea></label>
                     </p>
                     <p>
-                        <label><input type="checkbox" name="términos-y-condiciones" required>Acepto los términos y condiciones</label>
+                        <label><input type="checkbox" name="privacidad" required>He leído y aceptado la política de privacidad</label>
                     </p>
-                    <p>
+                    <p class="buttons">
                         <button type="submit">Enviar</button>
                         <button type="reset">Limpiar</button>
                     </p>                
@@ -54,16 +58,19 @@
                     <div id="footer-container-2">
                         <nav>
                             <a href="https://www.instagram.com/">
-                                <img src="../assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!">
+                                <img src="../assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="Instagram del restaurante"
+                                    width="240" height="240">
                             </a>
                             <a href="https://www.x.com/">
-                                <img src="../assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!">
+                                <img src="../assets/img/x_icon.png" title="¡Síguenos en X!" alt="X del restaurante"
+                                    width="240" height="240">
                             </a>                
                             <a href="https://www.facebook.com/">
-                                <img src="../assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!">
+                                <img src="../assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="Facebook del restaurante"
+                                    width="240" height="240">
                             </a>
                         </nav>
-                        <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
+                        <p>&copy; 2026 Restaurante. Todos los derechos reservados.</p>
                     </div>
                 </div>
             </footer>

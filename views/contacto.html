@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <title>Mi web</title>
+        <title>Dónde estamos | Restaurante</title>
         <meta name="author" content="Nicolás Da Silva">
-        <meta name="description" content="Contáctenos y haga su reserva.">
+        <meta name="description" content="Consulta la ubicación de nuestro local.">
         <meta name="keywords" content="reservas, información, eventos">
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="icon" type="image/png" href="../favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
     </head>
     <body>
         <header>
@@ -23,28 +23,38 @@
                     <a class="selected" href="#">Contacto</a>
                 </nav>
             </div>
-            <hr>
         </header>
-        <main>
-            <h2>Puede encontrarnos en:</h2>
-            <p>P.º de Sagasta, 34, 50006 Zaragoza</p>
-            <img src="../assets/img/contact/ubicación.png" title="Ubicación de nuestro local" alt="Ubicación de nuestro local">
+        <main>            
+                <h2>Puedes encontrarnos en:</h2>
+            <div id="ubication-container">
+                <!-- <address> para aportar significado semántico -->
+                <address id="contact-card">
+                    <p>P.º de Sagasta, 34,</p>
+                    <p>50006 Zaragoza</p>
+                </address>
+                <img id="map-img" src="../assets/img/contact/ubicacion.png"
+                    title="Mapa de Zaragoza con nuestra ubicación" alt="Mapa de Zaragoza con nuestra ubicación"
+                    width="605" height="332">
+            </div>
         </main>
         <footer>
             <div id="footer-container-1">
                 <div id="footer-container-2">
                     <nav>
                         <a href="https://www.instagram.com/">
-                            <img src="../assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="¡Síguenos en Instagram!">
+                            <img src="../assets/img/instagram_icon.png" title="¡Síguenos en Instagram!" alt="Instagram del restaurante"
+                                width="240" height="240">
                         </a>
                         <a href="https://www.x.com/">
-                            <img src="../assets/img/x_icon.png" title="¡Síguenos en X!" alt="¡Síguenos en X!">
+                            <img src="../assets/img/x_icon.png" title="¡Síguenos en X!" alt="X del restaurante"
+                                width="240" height="240">
                         </a>                
                         <a href="https://www.facebook.com/">
-                            <img src="../assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="¡Síguenos en Facebook!">
+                            <img src="../assets/img/facebook_icon.png" title="¡Síguenos en Facebook!" alt="Facebook del restaurante"
+                                width="240" height="240">
                         </a>
                     </nav>
-                    <p>&copy; 2026 Mi web!. Todos los derechos reservados.</p>
+                    <p>&copy; 2026 Restaurante. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>
